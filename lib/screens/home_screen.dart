@@ -8,6 +8,8 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  int totalSeconds = 1500;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -46,6 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     child: Container(
                       decoration: BoxDecoration(
                         color: Theme.of(context).cardColor,
+                        borderRadius: BorderRadius.circular(50),
                       ),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
